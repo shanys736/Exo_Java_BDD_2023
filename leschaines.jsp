@@ -42,7 +42,7 @@
            countE++;
        }
    } %>
-<p>Le nombre de 'e' dans votre chaîne est : <%= countE %></p> 
+<p>Le nombre de 'e' dans votre chaîne est : <%= countE %></p>
 
 
        <h2>Exercice 2 : Affichage verticale</h2>
@@ -73,7 +73,6 @@ pluvieux</p>
 <% for (String mot : mots) { %>
     <p><%= mot %></p>
 <% } %>
-
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
 Exemple : L'hiver sera pluvieux</br>
@@ -84,7 +83,8 @@ Lhvrsr lvex</p>
    for (int i = 0; i < chaine.length(); i += 2) {
        sb.append(chaine.charAt(i));
    } %>
-<p>Une lettre sur deux : <%= sb.toString() %></p
+<p>Une lettre sur deux : <%= sb.toString() %></p>
+
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
 Exemple : L'hiver sera pluvieux</br>
