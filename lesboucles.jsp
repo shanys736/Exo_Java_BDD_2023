@@ -1,10 +1,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Boucles</title>
+    <title>Boucles</title>
 </head>
 <body bgcolor=white>
 <h1>Exercices sur les boucles</h1>
+
 <form action="#" method="post">
     <label for="inputValeur">Saisir le nombre d'étoiles : </label>
     <input type="text" id="inputValeur" name="valeur">
@@ -13,22 +14,22 @@
 
 <%-- Récupération de la valeur saisie par l'utilisateur --%>
 <% String valeur = request.getParameter("valeur"); %>
-    
-<%-- Vérification de l'existence de la valeur --%>
-<% if (valeur != null && !valeur.isEmpty()) { %>
 
-<%-- Boucle for pour afficher une ligne d'étoiles --%>
-    <%int cpt = Integer.parseInt(valeur); %>
-    <p>
+<%-- Vérification de l'existence de la valeur --%>
+<% if (valeur != null && !valeur.isEmpty()) {
+     int cpt = Integer.parseInt(valeur); %>
+
+<!-- Exercice ligne d'étoiles -->
+<p>
     <% for (int i = 1; i <= cpt; i++) { %>
-       <%= "*" %>
+        <%= "*" %>
     <% } %>
-    </p>
+</p>
 
 <h2>Exercice 1 : Le carré d'étoiles</h2>
 <p>Ecrire le code afin de produire un carré d'étoile</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<% for (int i = 1; i <= cpt;i++ } { %> 
+<p>Exemple si l'utilisateur saisie la valeur 5</p>
+<% for (int i = 1; i <= cpt; i++) { %>
     <p>
     <% for (int j = 1; j <= cpt; j++) { %>
         <%= "*" %>
